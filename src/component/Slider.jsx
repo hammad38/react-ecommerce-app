@@ -57,7 +57,7 @@ const Slider = () => {
       <Wrapper>
         <Slide>
           <ImgContainer>
-            <Image src="https://spng.pngfind.com/pngs/s/32-323913_womens-fashion-images-png-transparent-png.png" />
+            <Image src="" />
           </ImgContainer>
           <InfoContainer></InfoContainer>
         </Slide>
