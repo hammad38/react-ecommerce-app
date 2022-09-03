@@ -7,7 +7,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   position: relative;
-  /* background-color: #c6002a; */
+  background-color: #c6002a; 
 `;
 
 const Arrow = styled.div`
