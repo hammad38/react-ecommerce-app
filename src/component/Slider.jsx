@@ -7,13 +7,13 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   position: relative;
-  background-color: #c6002a; 
+  /* background-color: #c6002a;  */
 `;
 
 const Arrow = styled.div`
   width: 50px;
   height: 50px;
-  background-color: aliceblue;
+  background-color: lightgray;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -46,7 +46,28 @@ const Image = styled.img`
 
 const InfoContainer = styled.div`
   flex: 1;
+  padding: 50px;
 `;
+
+const Title = styled.h1`
+font-size: 70px;
+text-transform: uppercase;
+`
+const Desc = styled.p`
+text-transform: uppercase;
+margin: 50px 0px;
+font-size: 20px;
+font-weight: 500;
+letter-spacing: 3px;
+`
+const Button = styled.button`
+text-transform: uppercase;
+padding: 10px;
+font-size: 20px;
+background-color: transparent;
+cursor: pointer;
+border: 1px solid gray;
+`
 
 const Slider = () => {
   return (
@@ -57,9 +78,13 @@ const Slider = () => {
       <Wrapper>
         <Slide>
           <ImgContainer>
-            <Image src="" />
+            <Image src="https://png.pngitem.com/pimgs/s/509-5095414_fashion-model-png-transparent-png.png" />
           </ImgContainer>
-          <InfoContainer></InfoContainer>
+          <InfoContainer>
+            <Title>summer sale</Title>
+            <Desc>don't compromise on style! get 30% off for new arrivals.</Desc>
+            <Button>buy now</Button>
+          </InfoContainer>
         </Slide>
       </Wrapper>
       <Arrow direction="right">
