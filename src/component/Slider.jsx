@@ -1,6 +1,8 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@mui/icons-material";
 import React from "react";
+import { useState } from "react";
 import styled from "styled-components";
+import { sliderItems } from "../data";
 
 const Container = styled.div`
   height: 100vh;
@@ -37,7 +39,7 @@ const Slide = styled.div`
   width: 100vw;
   display: flex;
   align-items: center;
-  background-color: #${props=>props.bg};
+  background-color: #${(props) => props.bg};
 `;
 const ImgContainer = styled.div`
   height: 100%;
@@ -53,64 +55,50 @@ const InfoContainer = styled.div`
 `;
 
 const Title = styled.h1`
-font-size: 70px;
-text-transform: uppercase;
-`
+  font-size: 70px;
+  text-transform: uppercase;
+`;
 const Desc = styled.p`
-text-transform: uppercase;
-margin: 50px 0px;
-font-size: 20px;
-font-weight: 500;
-letter-spacing: 3px;
-`
+  text-transform: uppercase;
+  margin: 50px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+`;
 const Button = styled.button`
-text-transform: uppercase;
-padding: 10px;
-font-size: 20px;
-background-color: transparent;
-cursor: pointer;
-border: 1px solid gray;
-`
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid gray;
+`;
 
 const Slider = () => {
+  const [slideIndex, setSlideIndex] = useState(0);
+  const hadnleClick = (direction) => {};
+
   return (
     <Container>
-      <Arrow direction="left" >
+      <Arrow direction="left" onClick={() => hadnleClick("left")}>
         <ArrowLeftOutlined />
       </Arrow>
       <Wrapper>
-        <Slide bg="f7e5c5">
-          <ImgContainer>
-            <Image src="https://png.pngitem.com/pimgs/s/509-5095414_fashion-model-png-transparent-png.png" />
-          </ImgContainer>
-          <InfoContainer>
-            <Title>summer sale</Title>
-            <Desc>don't compromise on style! get 30% off for new arrivals.</Desc>
-            <Button>buy now</Button>
-          </InfoContainer>
-        </Slide>
-        <Slide bg="f7e5c9">
-          <ImgContainer>
-            <Image src="https://png.pngitem.com/pimgs/s/509-5095414_fashion-model-png-transparent-png.png" />
-          </ImgContainer>
-          <InfoContainer>
-            <Title>winter sale</Title>
-            <Desc>don't compromise on style! get 30% off for new arrivals.</Desc>
-            <Button>buy now</Button>
-          </InfoContainer>
-        </Slide>
-        <Slide bg="f7e5c0">
-          <ImgContainer>
-            <Image src="https://png.pngitem.com/pimgs/s/509-5095414_fashion-model-png-transparent-png.png" />
-          </ImgContainer>
-          <InfoContainer>
-            <Title>popular sale</Title>
-            <Desc>don't compromise on style! get 30% off for new arrivals.</Desc>
-            <Button>buy now</Button>
-          </InfoContainer>
-        </Slide>
+        {/* using map method */}
+        {sliderItems.map((item) => (
+          <Slide bg={item.bg}>
+            <ImgContainer>
+              <Image src={item.img} />
+            </ImgContainer>
+            <InfoContainer>
+              <Title>{item.title}</Title>
+              <Desc>{item.desc}</Desc>
+              <Button>buy now</Button>
+            </InfoContainer>
+          </Slide>
+        ))}
       </Wrapper>
-      <Arrow direction="right">
+      <Arrow direction="right" onClick={() => hadnleClick("right")}>
         <ArrowRightOutlined />
       </Arrow>
     </Container>
