@@ -7,7 +7,8 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   position: relative;
-  /* background-color: #c6002a;  */
+  overflow: hidden;
+  /* background-color: #c6002a;   */
 `;
 
 const Arrow = styled.div`
@@ -29,12 +30,14 @@ const Arrow = styled.div`
 `;
 const Wrapper = styled.div`
   height: 100%;
+  display: flex;
 `;
 const Slide = styled.div`
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
+  background-color: #${props=>props.bg};
 `;
 const ImgContainer = styled.div`
   height: 100%;
@@ -72,16 +75,36 @@ border: 1px solid gray;
 const Slider = () => {
   return (
     <Container>
-      <Arrow direction="left">
+      <Arrow direction="left" >
         <ArrowLeftOutlined />
       </Arrow>
       <Wrapper>
-        <Slide>
+        <Slide bg="f7e5c5">
           <ImgContainer>
             <Image src="https://png.pngitem.com/pimgs/s/509-5095414_fashion-model-png-transparent-png.png" />
           </ImgContainer>
           <InfoContainer>
             <Title>summer sale</Title>
+            <Desc>don't compromise on style! get 30% off for new arrivals.</Desc>
+            <Button>buy now</Button>
+          </InfoContainer>
+        </Slide>
+        <Slide bg="f7e5c9">
+          <ImgContainer>
+            <Image src="https://png.pngitem.com/pimgs/s/509-5095414_fashion-model-png-transparent-png.png" />
+          </ImgContainer>
+          <InfoContainer>
+            <Title>winter sale</Title>
+            <Desc>don't compromise on style! get 30% off for new arrivals.</Desc>
+            <Button>buy now</Button>
+          </InfoContainer>
+        </Slide>
+        <Slide bg="f7e5c0">
+          <ImgContainer>
+            <Image src="https://png.pngitem.com/pimgs/s/509-5095414_fashion-model-png-transparent-png.png" />
+          </ImgContainer>
+          <InfoContainer>
+            <Title>popular sale</Title>
             <Desc>don't compromise on style! get 30% off for new arrivals.</Desc>
             <Button>buy now</Button>
           </InfoContainer>
