@@ -1,14 +1,15 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://www.pngitem.com/pimgs/m/397-3977074_fashion-model-png-transparent-png.png",
+      img: "https://i.ibb.co/DG69bQ4/2.png",
       title: "SUMMER SALE",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "f5fafd",
     },
+    
     {
       id: 2,
-      img: "https://i.ibb.co/DG69bQ4/2.png",
+      img: "https://www.pngitem.com/pimgs/m/397-3977074_fashion-model-png-transparent-png.png",
       title: "AUTUMN COLLECTION",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fcf1ed",
