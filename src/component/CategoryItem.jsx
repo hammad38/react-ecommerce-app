@@ -32,8 +32,7 @@ const Button = styled.button`
 border: none;
 text-transform: uppercase;
 padding: 5px;
-/* margin: 10px; */
-font-size: 15px;
+font-size: 20px;
 font-weight: 500;
 cursor: pointer;
 opacity: 0.5;
