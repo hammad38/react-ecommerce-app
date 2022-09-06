@@ -4,23 +4,39 @@ const Container = styled.div`
 flex:1;
 margin: 3px;
 height: 70vh;
+position: relative;
 `
 const Image = styled.img`
 height: 100%;
 width: 100%;
 object-fit: cover;
 `
-const Info = styled.div``
-const Title = styled.h1``
+const Info = styled.div`
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+flex-direction: column ;
+align-items: center;
+justify-content: center;
+height: 100%;
+width: 100%;
+`
+
+const Title = styled.h1`
+color: white;
+margin-bottom: 20px;
+`
 
 const Button = styled.button`
+border: none;
 text-transform: uppercase;
 padding: 5px;
 /* margin: 10px; */
-background-color: transparent;
 font-size: 15px;
-border: 1px solid gray;
+font-weight: 500;
 cursor: pointer;
+opacity: 0.5;
 
 `
 
