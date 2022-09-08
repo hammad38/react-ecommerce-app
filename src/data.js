@@ -9,7 +9,7 @@ export const sliderItems = [
     
     {
       id: 2,
-      img: "https://www.pngarts.com/files/18/Isla-Fisher-PNG-Image.png",
+      img: "https://www.pngarts.com/files/8/Hailee-Steinfeld-PNG-Pic.png",
       title: "AUTUMN COLLECTION",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fcf1ed",
