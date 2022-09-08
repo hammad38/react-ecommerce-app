@@ -1,20 +1,57 @@
+import { Send } from '@material-ui/icons'
 import styled from 'styled-components'
 
 const Container = styled.div`
+height: 60vh;
+background-color: #fcf5f5;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 `
-const Title = styled.h1``
-const Description = styled.div``
-const InputContainer = styled.div``
-const Input = styled.input``
-const Button = styled.button``
+const Title = styled.h1`
+font-size: 70px;
+`
+const Description = styled.div`
+font-weight: 300;
+font-size: 24px;
+margin: 25px;
+`
+
+const InputContainer = styled.div`
+width: 50%;
+height: 40px;
+background-color: #fff;
+display: flex;
+justify-content: space-between;
+border: 1px solid gray;
+
+`
+const Input = styled.input`
+border: none;
+outline: none;
+font-size: 15px;
+flex: 8;
+padding: 20px;
+`
+const Button = styled.button`
+border: none;
+background-color: #fff;
+cursor: pointer;
+flex: 1;
+background-color: teal;
+color: #fff;
+`
 const Newsletter = () => {
   return (
     <Container>
     <Title>Newsletter</Title>
-    <Description></Description>
+    <Description>Get timely updates from your favorite products.</Description>
     <InputContainer>
-      <Input />
-      <Button></Button>
+      <Input placeholder='Your email' />
+      <Button>
+        <Send />
+      </Button>
     </InputContainer>
     </Container>
   )

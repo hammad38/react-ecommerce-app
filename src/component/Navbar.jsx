@@ -37,6 +37,7 @@ const SearchContainer = styled.div`
 
 const Input = styled.input`
   border: none;
+  outline: none;
 `;
 
 const Center = styled.div`
@@ -70,7 +71,7 @@ const Navbar = () => {
           <Language>EN</Language>
           <SearchContainer>
             <Input />
-            <Search style={{color: "gray", fontSize: "16px"}} />
+            <Search style={{color: "gray", fontSize: "16px", cursor: "pointer"}} />
           </SearchContainer>
         </Left>
         <Center>
