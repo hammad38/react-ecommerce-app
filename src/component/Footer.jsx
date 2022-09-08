@@ -11,6 +11,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
+  background-color: teal;
 `;
 const Left = styled.div`
   flex: 1;
@@ -73,7 +74,7 @@ const ContactItem = styled.div`
   align-items: center;
 `;
 const Payment = styled.img`
-width: 50% ;
+  width: 50%;
 `;
 
 const Footer = () => {
@@ -125,17 +126,17 @@ const Footer = () => {
       <Right>
         <Title>Contact</Title>
         <ContactItem>
-          <Room style={{ marginRight: "10px" }} /> Plot 8, Karachi Memon
-          Co-operative Housing Society Umar Colony, Karachi City, Sindh,
-          Pakistan
+          <Room style={{ marginRight: "10px", cursor: "pointer" }} /> Plot 8,
+          Karachi Memon Co-operative Housing Society Umar Colony, Karachi City,
+          Sindh, Pakistan
         </ContactItem>
 
         <ContactItem>
-          <Phone style={{ marginRight: "10px" }} /> +92-320-3011640
+          <Phone style={{ marginRight: "10px", cursor: "pointer" }} /> +92-320-3011640
         </ContactItem>
 
         <ContactItem>
-          <Mail style={{ marginRight: "10px" }} /> contact@monarch.com
+          <Mail style={{ marginRight: "10px", cursor: "pointer" }} /> contact@monarch.com
         </ContactItem>
 
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
