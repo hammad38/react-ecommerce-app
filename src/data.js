@@ -1,7 +1,7 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://www.pngarts.com/files/1/Cocktail-Dress-PNG-Image-Background.png",
+      img: "https://www.pngarts.com/files/12/Model-Barbara-Palvin-PNG-Download-Image.png",
       title: "SUMMER SALE",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "f5fafd",
