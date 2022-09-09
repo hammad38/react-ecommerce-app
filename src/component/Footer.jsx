@@ -12,6 +12,7 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   background-color: teal;
+  color: whitesmoke;
 `;
 const Left = styled.div`
   flex: 1;
