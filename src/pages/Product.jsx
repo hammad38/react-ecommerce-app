@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 import Announcement from "../component/Announcement";
 import Footer from "../component/Footer";
@@ -11,7 +12,10 @@ const Image = styled.img``;
 
 const Product = () => {
   return (
+    
+    
     <Container>
+    
       <Navbar />
       <Announcement />
       <Wrapper>
