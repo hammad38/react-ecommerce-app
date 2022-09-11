@@ -3,34 +3,19 @@ import { useState } from "react";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 import ProductList from "./pages/ProductList";
+import "./style.css";
 
-const styles = {
-    red: {
-      height: "10px",
-      widht: "10px",
-      margin : "10px",
-      padding: "10px",
-      backgroundColor: "red"
-    },
-    blue: {
-      height: "10px",
-      widht: "10px",
-      margin : "10px",
-      padding: "10px",
-      backgroundColor: "blue    "
-    }
-}
+const App = () => {
+const [click, setClick] = useState(false)
+    return (
+    <>
 
-const App = () =>{
-const [click, setClick] = useState(-1)
-    return(
-        <>
-        {["","","",""].map((index, value) => ( 
-            <button   onClick={()=>setClick(!click)} >{index} </button>
-            )
-        )}
-        </>
-    )
-}
+    {["","","",""].map((value, index) => (
+    <button className={click===index ? "red" : "blue"} onClick={()=>setClick(index)} >{index}</button>
+    ))}
+    <button></button>
+    </>
+  );
+};
 
 export default App;
