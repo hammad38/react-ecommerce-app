@@ -8,27 +8,27 @@ import Newsletter from "../component/Newsletter";
 const Container = styled.div``;
 
 const Wrapper = styled.div`
-padding: 50px;
-display: flex;
+  padding: 50px;
+  display: flex;
 `;
 
 const ImgContainer = styled.div`
-flex: 1;
+  flex: 1;
 `;
 
 const Image = styled.img`
-width: 100%;
+  width: 100%;
 `;
 
 const InfoContainer = styled.div`
-flex: 1;
-padding: 0px 50px;
+  flex: 1;
+  padding: 0px 50px;
 `;
 
 const Title = styled.h1``;
 
 const Desc = styled.p``;
-const Price = styled.span``
+const Price = styled.span``;
 
 const FilterContainer = styled.div`
   width: 50%;
@@ -86,6 +86,22 @@ const Amount = styled.span`
   justify-content: center;
   margin: 0px 5px;
 `;
+
+const Button = styled.button`
+text-transform: uppercase;
+background-color: transparent;
+padding: 15px;
+border: 2px solid teal;
+cursor: pointer;
+font-weight: 500;
+
+&:hover{
+  background-color: #c9ffe5
+;
+}
+
+`;
+
 const Product = () => {
   return (
     <Container>
