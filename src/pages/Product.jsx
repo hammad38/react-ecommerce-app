@@ -22,6 +22,7 @@ width: 100%;
 
 const InfoContainer = styled.div`
 flex: 1;
+padding: 0px 50px;
 `;
 
 const Title = styled.h1``;
