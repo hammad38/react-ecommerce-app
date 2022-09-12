@@ -16,7 +16,9 @@ const ImgContainer = styled.div`
 flex: 1;
 `;
 
-const Image = styled.img``;
+const Image = styled.img`
+width: 100%;
+`;
 
 const InfoContainer = styled.div`
 flex: 1;
