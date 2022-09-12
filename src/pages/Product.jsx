@@ -70,7 +70,7 @@ const Product = () => {
           <AddContainer>
             <AmountContainer>
               <Remove />
-              <Add
+              <Add />
             </AmountContainer>
           </AddContainer>
         </InfoContainer>
