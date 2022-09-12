@@ -9,6 +9,10 @@ const Container = styled.div``;
 const Wrapper = styled.div``;
 const ImgContainer = styled.div``;
 const Image = styled.img``;
+const InfoContainer = styled.div``
+const Title = styled.h1``
+const Desc = styled.p``
+
 
 const Product = () => {
   return (
@@ -22,6 +26,11 @@ const Product = () => {
         <ImgContainer>
           <Image src="https://i.ibb.co/S6qMxwr/jean.jpg" />
         </ImgContainer>
+
+        <InfoContainer>
+          <Title>Denim JumpSuit </Title>
+          <Desc>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae illum voluptatum fugit quod aut natus iure molestias vel! Ut hic maxime quidem possimus nam excepturi dolor tempore officiis consequuntur porro!</Desc>
+        </InfoContainer>
       </Wrapper>
       <Newsletter />
       <Footer />
