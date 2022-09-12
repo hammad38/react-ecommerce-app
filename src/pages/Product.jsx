@@ -127,8 +127,10 @@ const Product = () => {
           <AddContainer>
             <AmountContainer>
               <Remove />
+              <Amount>1</Amount>
               <Add />
             </AmountContainer>
+            <Button>add to cart</Button>
           </AddContainer>
         </InfoContainer>
       </Wrapper>
