@@ -6,11 +6,24 @@ import Navbar from "../component/Navbar";
 import Newsletter from "../component/Newsletter";
 
 const Container = styled.div``;
-const Wrapper = styled.div``;
-const ImgContainer = styled.div``;
+
+const Wrapper = styled.div`
+padding: 50px;
+display: flex;
+`;
+
+const ImgContainer = styled.div`
+flex: 1;
+`;
+
 const Image = styled.img``;
-const InfoContainer = styled.div``;
+
+const InfoContainer = styled.div`
+flex: 1;
+`;
+
 const Title = styled.h1``;
+
 const Desc = styled.p``;
 const Price = styled.span``
 const Product = () => {
