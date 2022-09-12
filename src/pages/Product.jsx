@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Add, Remove } from "@mui/icons-material";
 import styled from "styled-components";
 import Announcement from "../component/Announcement";
 import Footer from "../component/Footer";
@@ -48,6 +48,31 @@ const Product = () => {
             porro!
           </Desc>
           <Price>$ 20</Price>
+          <FilterContainer>
+            <Filter>
+              <FilterTitle>Color</FilterTitle>
+              <FilterColor color="black" />
+              <FilterColor color="darkblue" />
+              <FilterColor color="gray" />
+            </Filter>
+            <Filter>
+              <FilterTitle>Size</FilterTitle>
+              <FilterSize>
+                <FilterSizeOption>XS</FilterSizeOption>
+                <FilterSizeOption>S</FilterSizeOption>
+                <FilterSizeOption>M</FilterSizeOption>
+                <FilterSizeOption>L</FilterSizeOption>
+                <FilterSizeOption>XL</FilterSizeOption>
+              </FilterSize>
+            </Filter>
+          </FilterContainer>
+
+          <AddContainer>
+            <AmountContainer>
+              <Remove />
+              <Add
+            </AmountContainer>
+          </AddContainer>
         </InfoContainer>
       </Wrapper>
       <Newsletter />
