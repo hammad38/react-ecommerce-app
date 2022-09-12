@@ -6,15 +6,10 @@ import ProductList from "./pages/ProductList";
 import "./style.css";
 
 const App = () => {
-const [click, setClick] = useState(false)
     return (
     <>
-
-    {["","","",""].map((value, index) => (
-    <button className={click===index ? "red" : "blue"} onClick={()=>setClick(index)} >{index}</button>
-    ))}
-    <button></button>
-    </>
+    <ProductList />
+        </>
   );
 };
 
