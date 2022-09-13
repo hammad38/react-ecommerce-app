@@ -34,6 +34,8 @@ flex: 1 ;
 min-width: 40%;
 margin: 10px 20px 0px 0px;
 padding: 7px;
+border: 1px solid gray;
+
 `;
 
 const Agreement = styled.span`
@@ -42,10 +44,12 @@ margin: 20px 0px;
 `
 
 const Button = styled.button`
-display: flex;
-align-items: center;
+width: 40%;
+/* display: flex; */
 justify-content: center;
-/* position: absolute; */
+background-color: transparent;
+border: 1px solid teal;
+padding: 5px;
 `
 
 const Register = () => {
