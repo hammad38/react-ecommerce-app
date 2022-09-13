@@ -1,6 +1,13 @@
 import styled from "styled-components" 
-const Container = styled.div`
+
+const Container = styled.div``
+const Wrapper = styled.div``
+const Title = styled.h1`
+text-transform: uppercase;
 `
+const Form = styled.form``
+const Input = styled.input``
+
 const Register = () => {
   return (
     <Container>
