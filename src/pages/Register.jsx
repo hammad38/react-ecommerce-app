@@ -22,7 +22,12 @@ background-color: #fff;
 const Title = styled.h1`
   text-transform: uppercase;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 10px;
+
 `;
 const Form = styled.form`
 display: flex;
@@ -32,7 +37,7 @@ flex-wrap: wrap;
 const Input = styled.input`
 flex: 1 ;
 min-width: 40%;
-margin: 10px 20px 0px 0px;
+margin: 10px 7px ;
 padding: 7px;
 border: 1px solid gray;
 
@@ -40,16 +45,26 @@ border: 1px solid gray;
 
 const Agreement = styled.span`
 font-size: 12px;
-margin: 20px 0px;
+margin: 10px 0px;
 `
 
 const Button = styled.button`
 width: 40%;
-/* display: flex; */
+/* position: absolute; */
+display: flex;  
 justify-content: center;
-background-color: transparent;
-border: 1px solid teal;
-padding: 5px;
+background-color: teal;
+color: #fff;
+font-size: 14px;
+border: none;
+padding: 10px 20px;
+margin: auto;
+cursor: pointer;
+&:hover{
+    background-color: #96FFFF;
+    color: #000;
+}
+
 `
 
 const Register = () => {
