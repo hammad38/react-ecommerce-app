@@ -50,7 +50,6 @@ margin: 10px 0px;
 
 const Button = styled.button`
 width: 40%;
-/* position: absolute; */
 display: flex;  
 justify-content: center;
 background-color: teal;
@@ -64,7 +63,6 @@ cursor: pointer;
     background-color: #96FFFF;
     color: #000;
 }
-
 `
 
 const Register = () => {
