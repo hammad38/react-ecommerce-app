@@ -52,6 +52,10 @@ const Link = styled.a`
   text-transform: uppercase;
   cursor: pointer;
 
+  &:hover{
+    color: blue;
+  }
+
 `;
 
 const Button = styled.button`
@@ -80,7 +84,7 @@ const Login = () => {
         <Form>
           <Input placeholder="name" />
           <Input placeholder="username" />
-          <Button>LOGIN</Button>
+          <Button>LOG   IN</Button>
           <Link>Forgotten password?</Link>
           <Link>Create new account</Link>
         </Form>
