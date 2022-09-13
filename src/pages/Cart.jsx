@@ -5,8 +5,10 @@ const Container = styled.div``
 
 const Cart = () => {
   return (
-    <Container></Container>
+    <Container>
+        
+    </Container>
   )
 }
 
-export default Cart
+export default Cart 

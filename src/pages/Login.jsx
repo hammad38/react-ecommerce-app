@@ -28,6 +28,8 @@ const Title = styled.h1`
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
+  cursor: pointer;
+
 `;
 const Form = styled.form`
   display: flex;
