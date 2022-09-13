@@ -10,7 +10,6 @@ width: 100vw;
 display: flex;
 align-items: center;
 justify-content: center;
-position: relative;
 `;
 
 const Wrapper = styled.div`
@@ -25,7 +24,6 @@ const Title = styled.h1`
   font-weight: 700;
   display: flex;
   justify-content: center;
-  margin: auto;
   margin-bottom: 10px;
 
 `;
