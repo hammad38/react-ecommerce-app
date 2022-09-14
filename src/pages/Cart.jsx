@@ -1,5 +1,4 @@
 import { Add, Remove } from "@mui/icons-material";
-import { yellow } from "@mui/material/colors";
 import styled from "styled-components";
 import Announcement from "../component/Announcement";
 import Footer from "../component/Footer";
