@@ -5,21 +5,30 @@ import Navbar from "../component/Navbar";
 
 const Container = styled.div``;
 const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
+  padding: 20px;
 `;
 const Title = styled.h1`
-padding: 20px;
+text-align: center;
 `;
 
 const Top = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
+padding: 20px;
 `;
+
 const TopButton = styled.button``;
-const TopTexts = styled.div``;
-const TopText = styled.span``;
+
+const TopTexts = styled.div`
+`
+
+const TopText = styled.span`
+margin: 0px 10px;
+text-decoration: underline;
+cursor: pointer;
+`;
+
 const Bottom = styled.div``;
 
 
@@ -35,8 +44,8 @@ const Cart = () => {
           <TopTexts>
             <TopText>Shopping Bag(2)</TopText>
             <TopText>Your Whishlist</TopText>
-            <TopButton>CHECKOUT NOW</TopButton>
           </TopTexts>
+            <TopButton>CHECKOUT NOW</TopButton>
         </Top>
         <Bottom></Bottom>
       </Wrapper>
