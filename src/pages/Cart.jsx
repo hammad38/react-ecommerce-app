@@ -40,6 +40,16 @@ const TopText = styled.span`
 const Bottom = styled.div``;
 const Info = styled.div``;
 const Summary = styled.div``;
+const Product = styled.div``
+const ProductDetail = styled.div``
+const Image = styled.img``
+const ProductName = styled.span``
+const ProductId = styled.span``
+const ProductColor = styled.div``
+const ProductSize = styled.span``
+const ProductAmount = styled.span``
+
+
 
 
 
