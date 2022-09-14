@@ -22,6 +22,7 @@ const Top = styled.div`
 const TopButton = styled.button`
   padding: 10px;
   font-weight: 600;
+  cursor: pointer;
   border: ${(props) => (props.type === "filled" && "none")};
   background-color: ${props=>props.type === "filled" && "black"  };
   color: ${props=>props.type==="filled" && "white" };
@@ -37,6 +38,10 @@ const TopText = styled.span`
 `;
 
 const Bottom = styled.div``;
+const Info = styled.div``;
+const Summary = styled.div``;
+
+
 
 const Cart = () => {
   return (
@@ -53,7 +58,12 @@ const Cart = () => {
           </TopTexts>
           <TopButton type="filled">CHECKOUT NOW</TopButton>
         </Top>
-        <Bottom></Bottom>
+
+        <Bottom>
+            <Info>
+                <Summary></Summary>
+            </Info>
+        </Bottom>
       </Wrapper>
       <Footer />
     </Container>
