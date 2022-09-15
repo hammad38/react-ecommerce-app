@@ -1,14 +1,14 @@
 import { Search } from "@mui/icons-material";
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Badge } from "@mui/material";
-import React from "react";
 import styled from "styled-components";
+import { mobile } from "../Responsive";
+import React, { useState } from 'react';
 
 const Container = styled.div`
   height: 60px;
   /* background-color: lightgray; */
-  @media only screen and (max-width: 380px){
-  }
+  ${mobile({ height: "50px" })}
 `;
 
 const Wrapper = styled.div`
@@ -63,7 +63,7 @@ const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
-  &:hover{
+  &:hover {
     color: teal;
   }
 `;
@@ -75,8 +75,10 @@ const Navbar = () => {
         <Left>
           <Language>EN</Language>
           <SearchContainer>
-            <Input placeholder="Search"/>
-            <Search style={{color: "gray", fontSize: "16px", cursor: "pointer"}} />
+            <Input placeholder="Search" />
+            <Search
+              style={{ color: "gray", fontSize: "16px", cursor: "pointer" }}
+            />
           </SearchContainer>
         </Left>
         <Center>
@@ -86,13 +88,14 @@ const Navbar = () => {
           <MenuItem>Register</MenuItem>
           <MenuItem>Sign In</MenuItem>
           <MenuItem>
-          <Badge badgeContent={8} color="primary">
-        <ShoppingCartOutlinedIcon />
-        </Badge>
-        </MenuItem>
+            <Badge badgeContent={8} color="primary">
+              <ShoppingCartOutlinedIcon />
+            </Badge>
+          </MenuItem>
         </Right>
       </Wrapper>
     </Container>
+
   );
 };
 

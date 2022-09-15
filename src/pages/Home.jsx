@@ -1,4 +1,5 @@
 import React from 'react'
+import Abc from '../abc'
 import Announcement from '../component/Announcement'
 import Categories from '../component/Categories'
 import Footer from '../component/Footer'
@@ -11,6 +12,7 @@ const Home = () => {
   return (
     <div>
     <Announcement />
+    <Abc />
     <Navbar />  
     <Slider />   
     <Categories />
