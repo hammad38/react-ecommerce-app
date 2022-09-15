@@ -8,7 +8,6 @@ const Container = styled.div`
   height: 60px;
   /* background-color: lightgray; */
   @media only screen and (max-width: 380px){
-    display: none;
   }
 `;
 
@@ -76,7 +75,7 @@ const Navbar = () => {
         <Left>
           <Language>EN</Language>
           <SearchContainer>
-            <Input />
+            <Input placeholder="Search"/>
             <Search style={{color: "gray", fontSize: "16px", cursor: "pointer"}} />
           </SearchContainer>
         </Left>
