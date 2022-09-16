@@ -21,7 +21,6 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
-  ${mobile({backgroundColor: "#eee", color: "black"})}
 `;
 const Logo = styled.h1`
   cursor: pointer;

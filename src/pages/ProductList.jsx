@@ -34,7 +34,7 @@ const Option = styled.option`
 border: none;
 `
 
-const ProductList = () => {
+const   ProductList = () => {
   return (
     <Container>
       <Navbar />
