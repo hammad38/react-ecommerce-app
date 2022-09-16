@@ -4,12 +4,14 @@ import Announcement from "../component/Announcement";
 import Footer from "../component/Footer";
 import Navbar from "../component/Navbar";
 import Newsletter from "../component/Newsletter";
+import { mobile } from "../Responsive";
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
   padding: 50px;
   display: flex;
+  ${mobile({padding: "10px", flexDirection:"column"})}
 `;
 
 const ImgContainer = styled.div`
@@ -18,6 +20,8 @@ const ImgContainer = styled.div`
 
 const Image = styled.img`
   width: 100%;
+  height: 90vh;
+  object-fit: cover;
 `;
 
 const InfoContainer = styled.div`
