@@ -9,7 +9,7 @@ import Register from "./pages/Register";
 const App = () => {
     return (
     <>
-    <Product />
+    <Home />
         </>
   );
 };
