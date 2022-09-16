@@ -8,11 +8,13 @@ import {
   Twitter,
 } from "@mui/icons-material";
 import styled from "styled-components";
+import { mobile } from "../Responsive";
 
 const Container = styled.div`
   display: flex;
   background-color: black;
   color: whitesmoke;
+  ${mobile({ flexDirection: "column" })}
 `;
 const Left = styled.div`
   flex: 1;
@@ -46,6 +48,7 @@ const SocialIcon = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ display: "none" })}
 `;
 const Title = styled.h3`
   margin-bottom: 30px;
@@ -133,11 +136,13 @@ const Footer = () => {
         </ContactItem>
 
         <ContactItem>
-          <Phone style={{ marginRight: "10px", cursor: "pointer" }} /> +92-320-3011640
+          <Phone style={{ marginRight: "10px", cursor: "pointer" }} />{" "}
+          +92-320-3011640
         </ContactItem>
 
         <ContactItem>
-          <Mail style={{ marginRight: "10px", cursor: "pointer" }} /> contact@monarch.com
+          <Mail style={{ marginRight: "10px", cursor: "pointer" }} />{" "}
+          contact@monarch.com
         </ContactItem>
 
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
