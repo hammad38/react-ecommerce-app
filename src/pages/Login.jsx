@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "../Responsive";
 
 const Container = styled.div`
   height: 100vh;
@@ -19,6 +20,7 @@ const Wrapper = styled.div`
   width: 20%;
   padding: 20px;
   background-color: #fff;
+ ${mobile({width: "75%"})}
 `;
 
 const Title = styled.h1`
