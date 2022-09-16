@@ -32,7 +32,6 @@ const Select = styled.select`
 padding: 10px;
 margin-right: 20px;
 ${mobile({margin: "10px 0px"})} 
-/* font-size: 17px; */
 `
 const Option = styled.option`
 border: none;
