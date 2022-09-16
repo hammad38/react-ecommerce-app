@@ -3,13 +3,13 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Badge } from "@mui/material";
 import styled from "styled-components";
 import { mobile } from "../Responsive";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Container = styled.div`
   height: 60px;
   /* background-color: lightgray; */
   ${mobile({ height: "50px" })}
-  `;
+`;
 
 const Wrapper = styled.div`
   padding: 10px 20px;
@@ -17,13 +17,13 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   ${mobile({ padding: "10px 0px" })}
-  `;
+`;
 
 const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-  `;
+`;
 
 const Language = styled.span`
   cursor: pointer;
@@ -32,7 +32,7 @@ const Language = styled.span`
 `;
 
 const SearchContainer = styled.div`
-  border: 0.5px solid gray;
+  border: 1px solid lightgray;
   display: flex;
   align-items: center;
   margin-left: 25px;
@@ -42,6 +42,7 @@ const SearchContainer = styled.div`
 const Input = styled.input`
   border: none;
   outline: none;
+  ${mobile({ width: "50px" })}
 `;
 
 const Center = styled.div`
@@ -52,6 +53,7 @@ const Logo = styled.h1`
   font-weight: bold;
   text-align: center;
   cursor: pointer;
+  ${mobile({ fontSize: "24px" })}
 `;
 
 const Right = styled.div`
@@ -59,6 +61,7 @@ const Right = styled.div`
   display: flex;
   justify-content: flex-end;
   text-transform: uppercase;
+  ${mobile({ flex: 2, justifyContent: "center" })}
 `;
 
 const MenuItem = styled.div`
@@ -68,6 +71,7 @@ const MenuItem = styled.div`
   &:hover {
     color: teal;
   }
+  ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 `;
 
 const Navbar = () => {
@@ -90,14 +94,13 @@ const Navbar = () => {
           <MenuItem>Register</MenuItem>
           <MenuItem>Sign In</MenuItem>
           <MenuItem>
-            <Badge badgeContent={8} color="primary">
+            <Badge badgeContent={5} color="primary">
               <ShoppingCartOutlinedIcon />
             </Badge>
           </MenuItem>
         </Right>
       </Wrapper>
     </Container>
-
   );
 };
 
