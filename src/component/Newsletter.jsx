@@ -39,7 +39,7 @@ border: none;
 background-color: #fff;
 cursor: pointer;
 flex: 1;
-background-color: teal;
+background-color: black;
 color: #fff;
 `
 const Newsletter = () => {

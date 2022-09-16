@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 import Product from "./pages/Product";
 import ProductList from "./pages/ProductList";
 import Register from "./pages/Register";
-import "./style.css";
+import Practice from "./Practice";
 
 const App = () => {
     return (

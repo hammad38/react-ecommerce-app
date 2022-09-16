@@ -9,24 +9,26 @@ const Container = styled.div`
   height: 60px;
   /* background-color: lightgray; */
   ${mobile({ height: "50px" })}
-`;
+  `;
 
 const Wrapper = styled.div`
   padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-`;
+  ${mobile({ padding: "10px 0px" })}
+  `;
 
 const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-`;
+  `;
 
 const Language = styled.span`
   cursor: pointer;
   font-size: 14px;
+  ${mobile({ display: "none" })}
 `;
 
 const SearchContainer = styled.div`
