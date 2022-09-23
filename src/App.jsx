@@ -7,10 +7,10 @@ import ProductList from "./pages/ProductList";
 import Register from "./pages/Register";
 
 const App = () => {
-    return (
+  return (
     <>
-    <Home />
-        </>
+      <Product />
+    </>
   );
 };
 

@@ -11,7 +11,7 @@ const Container = styled.div``;
 const Wrapper = styled.div`
   padding: 50px;
   display: flex;
-  ${mobile({padding: "10px", flexDirection:"column"})}
+  ${mobile({ padding: "10px", flexDirection: "column" })}
 `;
 
 const ImgContainer = styled.div`
@@ -22,6 +22,7 @@ const Image = styled.img`
   width: 100%;
   height: 90vh;
   object-fit: cover;
+  ${mobile({ height: "40vh" })}
 `;
 
 const InfoContainer = styled.div`
@@ -92,18 +93,16 @@ const Amount = styled.span`
 `;
 
 const Button = styled.button`
-text-transform: uppercase;
-background-color: transparent;
-padding: 15px;
-border: 2px solid teal;
-cursor: pointer;
-font-weight: 500;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 15px;
+  border: 2px solid teal;
+  cursor: pointer;
+  font-weight: 500;
 
-&:hover{
-  background-color: #c9ffe5
-;
-}
-
+  &:hover {
+    background-color: #c9ffe5;
+  }
 `;
 
 const Product = () => {
