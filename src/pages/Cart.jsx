@@ -147,9 +147,6 @@ const Button = styled.button`
   font-weight: 600;
 `;
 
-
-
-
 const Cart = () => {
   return (
     <Container>
