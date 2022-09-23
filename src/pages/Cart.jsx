@@ -3,10 +3,12 @@ import styled from "styled-components";
 import Announcement from "../component/Announcement";
 import Footer from "../component/Footer";
 import Navbar from "../component/Navbar";
+import { mobile } from "../Responsive";
 
 const Container = styled.div``;
 const Wrapper = styled.div`
   padding: 20px;
+  ${mobile({padding: "10px"})}
 `;
 const Title = styled.h1`
   text-align: center;
@@ -40,6 +42,7 @@ const TopText = styled.span`
 const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
+  ${mobile({flexDirection: "column"})}
 `;
 
 const Info = styled.div`
