@@ -28,6 +28,7 @@ const Image = styled.img`
 const InfoContainer = styled.div`
   flex: 1;
   padding: 0px 50px;
+  ${mobile({ padding: "10px" })}
 `;
 
 const Title = styled.h1``;
@@ -95,8 +96,9 @@ const Amount = styled.span`
 const Button = styled.button`
   text-transform: uppercase;
   background-color: transparent;
-  padding: 15px;
-  border: 2px solid teal;
+  margin-left: 94px;
+
+  border: 1px solid teal;
   cursor: pointer;
   font-weight: 500;
 
