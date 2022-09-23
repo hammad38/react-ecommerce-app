@@ -37,6 +37,7 @@ const TopText = styled.span`
   margin: 0px 10px;
   text-decoration: underline;
   cursor: pointer;
+  ${mobile({display :"none"})}
 `;
 
 const Bottom = styled.div`
