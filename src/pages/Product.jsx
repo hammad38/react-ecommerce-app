@@ -41,7 +41,7 @@ const FilterContainer = styled.div`
   margin: 30px 0px;
   display: flex;
   justify-content: space-between;
-  ${mobile({width : "100%"})}
+  ${mobile({ width: "100%" })}
 `;
 
 const Filter = styled.div`
@@ -75,6 +75,7 @@ const AddContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  ${mobile({ width: "100%" })}
 `;
 
 const AmountContainer = styled.div`
@@ -97,8 +98,7 @@ const Amount = styled.span`
 const Button = styled.button`
   text-transform: uppercase;
   background-color: transparent;
-  margin-left: 94px;
-
+  padding: 15px;
   border: 1px solid teal;
   cursor: pointer;
   font-weight: 500;
