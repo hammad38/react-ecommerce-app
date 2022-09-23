@@ -102,17 +102,19 @@ const ProductAmountContainer = styled.div`
 const ProductAmount = styled.div`
   font-size: 24px;
   margin: 5px;
-`;
+  ${mobile({margin: "0px 15px"})}
+  `;
 
 const ProductPrice = styled.div`
   font-size: 30px;
   font-weight: 200;
+  ${mobile({marginBottom: "15px"})}
 `;
 
 const Hr = styled.hr`
   background-color: #eee;
   border: none;
-  height: 1px;
+  height: 2px;
 `;
 
 const Summary = styled.div`
