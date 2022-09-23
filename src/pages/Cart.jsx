@@ -157,7 +157,7 @@ const Cart = () => {
       <Wrapper>
         <Title>YOUR BAG</Title>
         <Top>
-          <TopButton type="abc">CONTINUE SHOPPING</TopButton>
+          <TopButton >CONTINUE SHOPPING</TopButton>
           <TopTexts>
             <TopText>Shopping Bag(2)</TopText>
             <TopText>Your Whishlist</TopText>
